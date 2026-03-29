@@ -17,6 +17,7 @@ export default function Navigation() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [mobileDropdownOpen, setMobileDropdownOpen] = useState(false);
   const pathname = usePathname();
   const dropdownRef = useRef<HTMLDivElement>(null);
 
@@ -26,7 +27,7 @@ export default function Navigation() {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  useEffect(() => { setMobileOpen(false); setDropdownOpen(false); }, [pathname]);
+  useEffect(() => { setMobileOpen(false); setDropdownOpen(false); setMobileDropdownOpen(false); }, [pathname]);
 
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
@@ -100,13 +101,23 @@ export default function Navigation() {
         <div className="absolute top-full left-0 right-0 bg-[#090909]/95 backdrop-blur-xl border-b border-[rgba(201,168,76,0.12)] flex flex-col items-center gap-5 py-8 lg:hidden">
           <Link href="/" className="text-sm font-medium tracking-[0.12em] uppercase text-[#9a968e] no-underline hover:text-[#c9a84c]">Home</Link>
           <Link href="/why-ausclear" className="text-sm font-medium tracking-[0.12em] uppercase text-[#9a968e] no-underline hover:text-[#c9a84c]">Why Us</Link>
-          <div className="text-[0.65rem] tracking-[0.2em] uppercase text-[#c9a84c] mt-2">Clearance Help</div>
-          <Link href="/services" className="text-sm font-medium tracking-[0.12em] uppercase text-[#9a968e] no-underline hover:text-[#c9a84c] pl-4">Services</Link>
-          <Link href="/baseline-security-clearance" className="text-sm font-medium tracking-[0.12em] uppercase text-[#9a968e] no-underline hover:text-[#c9a84c] pl-4">Baseline Clearance</Link>
-          <Link href="/nv1-security-clearance" className="text-sm font-medium tracking-[0.12em] uppercase text-[#9a968e] no-underline hover:text-[#c9a84c] pl-4">NV1 Clearance</Link>
-          <Link href="/nv2-security-clearance" className="text-sm font-medium tracking-[0.12em] uppercase text-[#9a968e] no-underline hover:text-[#c9a84c] pl-4">NV2 Clearance</Link>
-          <Link href="/glossary" className="text-sm font-medium tracking-[0.12em] uppercase text-[#9a968e] no-underline hover:text-[#c9a84c] pl-4">Glossary</Link>
-          <a href="https://support.ausclear.com.au" className="text-sm font-medium tracking-[0.12em] uppercase text-[#9a968e] no-underline hover:text-[#c9a84c] pl-4">Knowledge Base</a>
+          <button
+            onClick={() => setMobileDropdownOpen(!mobileDropdownOpen)}
+            className="text-sm font-medium tracking-[0.12em] uppercase text-[#c9a84c] bg-transparent border-none cursor-pointer flex items-center gap-2 font-['Raleway'] mt-2"
+          >
+            Clearance Help
+            <svg width="10" height="10" fill="none" stroke="currentColor" strokeWidth="2" className={`transition-transform duration-200 ${mobileDropdownOpen ? 'rotate-180' : ''}`}><path d="M2 3.5l3 3 3-3"/></svg>
+          </button>
+          {mobileDropdownOpen && (
+            <div className="flex flex-col items-center gap-4">
+              <Link href="/services" className="text-sm font-medium tracking-[0.12em] uppercase text-[#9a968e] no-underline hover:text-[#c9a84c]">Services</Link>
+              <Link href="/baseline-security-clearance" className="text-sm font-medium tracking-[0.12em] uppercase text-[#9a968e] no-underline hover:text-[#c9a84c]">Baseline Clearance</Link>
+              <Link href="/nv1-security-clearance" className="text-sm font-medium tracking-[0.12em] uppercase text-[#9a968e] no-underline hover:text-[#c9a84c]">NV1 Clearance</Link>
+              <Link href="/nv2-security-clearance" className="text-sm font-medium tracking-[0.12em] uppercase text-[#9a968e] no-underline hover:text-[#c9a84c]">NV2 Clearance</Link>
+              <Link href="/glossary" className="text-sm font-medium tracking-[0.12em] uppercase text-[#9a968e] no-underline hover:text-[#c9a84c]">Glossary</Link>
+              <a href="https://support.ausclear.com.au" className="text-sm font-medium tracking-[0.12em] uppercase text-[#9a968e] no-underline hover:text-[#c9a84c]">Knowledge Base</a>
+            </div>
+          )}
           <Link href="/faq" className="text-sm font-medium tracking-[0.12em] uppercase text-[#9a968e] no-underline hover:text-[#c9a84c] mt-2">FAQ</Link>
           <Link href="/contact" className="text-sm font-medium tracking-[0.12em] uppercase text-[#9a968e] no-underline hover:text-[#c9a84c]">Contact</Link>
           <Link href="/contact" className="px-7 py-2.5 border border-[#c9a84c] text-[#c9a84c] text-xs tracking-[0.15em] uppercase no-underline hover:bg-[#c9a84c] hover:text-[#090909] transition-all mt-2">Get Started</Link>
