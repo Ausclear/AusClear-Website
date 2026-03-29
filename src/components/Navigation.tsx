@@ -10,7 +10,7 @@ const clearanceDropdown = [
   { href: '/nv1-security-clearance', label: 'NV1 Clearance' },
   { href: '/nv2-security-clearance', label: 'NV2 Clearance' },
   { href: '/glossary', label: 'Glossary of Terms' },
-  { href: 'https://support.ausclear.com.au', label: 'Knowledge Base', external: true },
+  { href: 'https://support.ausclear.au', label: 'Knowledge Base', external: true },
 ];
 
 export default function Navigation() {
@@ -115,7 +115,7 @@ export default function Navigation() {
               <Link href="/nv1-security-clearance" className="text-sm font-medium tracking-[0.12em] uppercase text-[#9a968e] no-underline hover:text-[#c9a84c]">NV1 Clearance</Link>
               <Link href="/nv2-security-clearance" className="text-sm font-medium tracking-[0.12em] uppercase text-[#9a968e] no-underline hover:text-[#c9a84c]">NV2 Clearance</Link>
               <Link href="/glossary" className="text-sm font-medium tracking-[0.12em] uppercase text-[#9a968e] no-underline hover:text-[#c9a84c]">Glossary</Link>
-              <a href="https://support.ausclear.com.au" className="text-sm font-medium tracking-[0.12em] uppercase text-[#9a968e] no-underline hover:text-[#c9a84c]">Knowledge Base</a>
+              <a href="https://support.ausclear.au" className="text-sm font-medium tracking-[0.12em] uppercase text-[#9a968e] no-underline hover:text-[#c9a84c]">Knowledge Base</a>
             </div>
           )}
           <Link href="/faq" className="text-sm font-medium tracking-[0.12em] uppercase text-[#9a968e] no-underline hover:text-[#c9a84c] mt-2">FAQ</Link>

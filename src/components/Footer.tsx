@@ -22,7 +22,7 @@ export default function Footer() {
             <Link href="/privacy-policy" className="block text-[0.85rem] text-[#9a968e] no-underline mb-2.5 font-light hover:text-[#c9a84c] transition-colors">Privacy Policy</Link>
             <Link href="/terms-and-conditions" className="block text-[0.85rem] text-[#9a968e] no-underline mb-2.5 font-light hover:text-[#c9a84c] transition-colors">Terms &amp; Conditions</Link>
             <Link href="/copyright" className="block text-[0.85rem] text-[#9a968e] no-underline mb-2.5 font-light hover:text-[#c9a84c] transition-colors">Copyright Notice</Link>
-            <a href="https://support.ausclear.com.au" className="block text-[0.85rem] text-[#9a968e] no-underline mb-2.5 font-light hover:text-[#c9a84c] transition-colors">Knowledge Base</a>
+            <a href="https://support.ausclear.au" className="block text-[0.85rem] text-[#9a968e] no-underline mb-2.5 font-light hover:text-[#c9a84c] transition-colors">Knowledge Base</a>
             <a href="https://support.ausclear.com.au/portal/en/kb/articles/ausclear-transparency-statement-ai-assisted-operations" className="block text-[0.85rem] text-[#9a968e] no-underline mb-2.5 font-light hover:text-[#c9a84c] transition-colors">AI Transparency Statement</a>
             <Link href="/faq" className="block text-[0.85rem] text-[#9a968e] no-underline mb-2.5 font-light hover:text-[#c9a84c] transition-colors">FAQ</Link>
           </div>

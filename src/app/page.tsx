@@ -124,7 +124,7 @@ export default function Home() {
               <p>Independently authored and continuously updated, our knowledge base provides clear, factual guidance for individuals and organisations navigating Australian Government security clearances. Whether you&rsquo;re preparing your first application or managing ongoing compliance obligations, you&rsquo;ll find comprehensive information written in plain English.</p>
               <p>We believe informed applicants make better decisions, experience fewer delays, and achieve better outcomes.</p>
             </div>
-            <a href="https://support.ausclear.com.au" className="inline-flex items-center gap-3 px-10 py-4 bg-[#c9a84c] text-[#090909] text-[0.75rem] font-semibold tracking-[0.15em] uppercase no-underline hover:bg-[#d4b96a] hover:-translate-y-0.5 hover:shadow-[0_8px_32px_rgba(201,168,76,0.2)] transition-all duration-300 mt-10">
+            <a href="https://support.ausclear.au" className="inline-flex items-center gap-3 px-10 py-4 bg-[#c9a84c] text-[#090909] text-[0.75rem] font-semibold tracking-[0.15em] uppercase no-underline hover:bg-[#d4b96a] hover:-translate-y-0.5 hover:shadow-[0_8px_32px_rgba(201,168,76,0.2)] transition-all duration-300 mt-10">
               Browse Knowledge Base
               <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2"><path d="M3 8h10M9 4l4 4-4 4" /></svg>
             </a>
