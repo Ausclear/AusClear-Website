@@ -45,7 +45,7 @@ export default function Home() {
       <Reveal>
         <div className="grid grid-cols-2 lg:grid-cols-3 border-y border-[rgba(201,168,76,0.12)] bg-[#0f0f0f]">
           {[
-            { num: 'Baseline', label: 'Highest Level' },
+            { num: 'NV2', label: 'Highest Level' },
             { num: 'Fast', label: 'Expert Guidance' },
             { num: '24hr', label: 'Guaranteed Response' },
           ].map((m, i) => (
