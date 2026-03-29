@@ -45,8 +45,8 @@ export default function Home() {
       <Reveal>
         <div className="grid grid-cols-2 lg:grid-cols-3 border-y border-[rgba(201,168,76,0.12)] bg-[#0f0f0f]">
           {[
-            { num: 'NV2', label: 'Highest Level' },
-            { num: 'Fast', label: 'Expert Guidance' },
+            { num: '3', label: 'Clearance Levels' },
+            { num: '120+', label: 'Knowledge Base Articles' },
             { num: '24hr', label: 'Guaranteed Response' },
           ].map((m, i) => (
             <div key={i} className={`py-12 px-8 text-center hover:bg-[#141414] transition-colors ${i < 2 ? 'border-r border-[rgba(201,168,76,0.12)]' : ''}`}>
