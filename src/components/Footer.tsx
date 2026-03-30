@@ -7,10 +7,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div>
-            <span className="font-['Raleway'] text-lg font-semibold tracking-[0.15em] uppercase">
-              <span className="text-[#c9a84c] font-bold">(</span>A<span className="text-[#c9a84c] font-bold">)</span>
-              <span className="text-white">us</span><span className="text-[#c9a84c]">Clear</span>
-            </span>
+            <img src="/logo-dark.png" alt="AusClear" className="h-8" />
             <p className="text-[0.85rem] text-[#6b6760] leading-relaxed font-light mt-4">
               Your trusted partner for security clearance sponsorship. We guide you through every step of the clearance process with expertise and care.
             </p>

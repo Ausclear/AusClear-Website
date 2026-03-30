@@ -41,12 +41,8 @@ export default function Navigation() {
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-[1000] px-6 lg:px-12 flex items-center justify-between border-b border-[rgba(201,168,76,0.12)] backdrop-blur-xl transition-all duration-400 ${scrolled ? 'h-16 bg-[#090909]/95' : 'h-20 bg-[#090909]/85'}`}>
-      <Link href="/" className="flex items-center gap-3 no-underline">
-        <span className="font-['Raleway'] text-xl font-semibold tracking-[0.15em] uppercase text-[#f0ede6]">
-          <span className="text-[#c9a84c] font-bold">(</span>A<span className="text-[#c9a84c] font-bold">)</span>
-          <span className="text-white">us</span>
-          <span className="text-[#c9a84c]">Clear</span>
-        </span>
+      <Link href="/" className="flex items-center no-underline">
+        <img src="/logo-dark.png" alt="AusClear" className="h-10" />
       </Link>
 
       {/* Desktop nav */}
