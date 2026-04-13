@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div>
-            <img src="/logo-dark.png" alt="AusClear" className="h-8" />
+            <img src="https://ausclear.au/AusClear-Dark-Transparent.png" alt="AusClear" style={{height:32}} />
             <p className="text-[0.85rem] text-[#6b6760] leading-relaxed font-light mt-4">
               Your trusted partner for security clearance sponsorship. We guide you through every step of the clearance process with expertise and care.
             </p>

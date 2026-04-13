@@ -42,7 +42,7 @@ export default function Navigation() {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-[1000] px-6 lg:px-12 flex items-center justify-between border-b border-[rgba(201,168,76,0.12)] backdrop-blur-xl transition-all duration-400 ${scrolled ? 'h-16 bg-[#090909]/95' : 'h-20 bg-[#090909]/85'}`}>
       <Link href="/" className="flex items-center no-underline">
-        <img src="/logo-dark.png" alt="AusClear" className="h-10" />
+        <img src="https://ausclear.au/AusClear-Dark-Transparent.png" alt="AusClear" style={{height:44}} />
       </Link>
 
       {/* Desktop nav */}
